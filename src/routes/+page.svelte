@@ -103,10 +103,10 @@
 		</div>
 	</section>
 	<section class="min-h-screen flex justify-center relative">
-		<img class="landscape-img" src="/lover-background.jpg" alt="" />
-		<img class="portrait-img" src="/lover-background-phone.jpg" alt="" />
-		<audio controls preload="auto" src="/taylor_swift.ogg">
-			<source src="/taylor_swift.ogg" type="audio/ogg" />
+		<img class="landscape-img" src="./lover-background.jpg" alt="" />
+		<img class="portrait-img" src="./lover-background-phone.jpg" alt="" />
+		<audio controls preload="auto" src="./taylor_swift.ogg">
+			<source src="./taylor_swift.ogg" type="audio/ogg" />
 			Unable to load
 		</audio>
 	</section>
