@@ -79,7 +79,7 @@
 			<div>Riley is</div>
 		</div>
 		<div class="grow-in slide-in fade-in rotate-in fancy-rotate-in" />
-		<div id="words" class="words text-5xl md:text-8xl text-center">
+		<div id="words" class="words text-4xl md:text-8xl text-center">
 			<div>EXTRAORDINARY</div>
 			<div>AMAZING</div>
 			<div>BEAUTIFUL</div>
@@ -105,8 +105,9 @@
 	<section class="min-h-screen flex justify-center relative">
 		<img class="landscape-img" src="./lover-background.jpg" alt="" />
 		<img class="portrait-img" src="./lover-background-phone.jpg" alt="" />
-		<audio controls preload="auto" src="./taylor_swift.ogg">
+		<audio controls preload="auto">
 			<source src="./taylor_swift.ogg" type="audio/ogg" />
+			<source src="./taylor_swift.mp3" type="audio/mp3" />
 			Unable to load
 		</audio>
 	</section>
