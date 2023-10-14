@@ -1,10 +1,10 @@
 {
     "manifest_version": 2,
-    "name": "Timer Trainer",
+    "name": "Riley",
     "version": "0.0.1",
-    "short_name": "Timer Trainer",
+    "short_name": "Riley",
     "start_url": "./",
-    "description": "Custom run timer to define your own custom intervals.",
+    "description": "Birthday present for Riley",
     "author": "Anthony Buchholz",
     "homepage_url": "https://github.com/yodigi7/riley",
     "developer": {
