@@ -30,6 +30,24 @@
 			doAnimation();
 			interval = setInterval(doAnimation, lingerDuration);
 		}
+
+		// Intersection observer to fade in and out background
+		let imgs = document.querySelectorAll('img');
+		if (imgs) {
+			let options = { root: null, threshold: 0.1 };
+			let observer = new IntersectionObserver((entries, observer) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.remove('opacity-0');
+					} else {
+						entry.target.classList.add('opacity-0');
+					}
+				});
+			}, options);
+			imgs.forEach((img) => {
+				observer.observe(img);
+			});
+		}
 	});
 	function createTextHint(text: string) {
 		const element = document.createElement('div');
@@ -78,6 +96,7 @@
 		<div class="flex justify-center">
 			<div>Riley is</div>
 		</div>
+		<!-- have these classes used so they aren't auto removed -->
 		<div class="grow-in slide-in fade-in rotate-in fancy-rotate-in" />
 		<div id="words" class="words text-4xl md:text-8xl text-center">
 			<div>EXTRAORDINARY</div>
@@ -103,8 +122,8 @@
 		</div>
 	</section>
 	<section class="min-h-screen flex justify-center relative">
-		<img class="landscape-img" src="./lover-background.jpg" alt="" />
-		<img class="portrait-img" src="./lover-background-phone.jpg" alt="" />
+		<img class="landscape-img opacity-0" src="./lover-background.jpg" alt="" />
+		<img class="portrait-img opacity-0" src="./lover-background-phone.jpg" alt="" />
 		<audio controls preload="auto">
 			<source src="./taylor_swift.ogg" type="audio/ogg" />
 			<source src="./taylor_swift.mp3" type="audio/mp3" />
@@ -123,8 +142,7 @@
 		width: 100%;
 		height: 100vh;
 		object-fit: cover;
-		opacity: 0;
-		animation: fade-in 5s ease-out 1 forwards;
+		transition: opacity 3s ease-in;
 	}
 	.landscape-img {
 		display: none;
