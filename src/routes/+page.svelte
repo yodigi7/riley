@@ -74,7 +74,7 @@
 </script>
 
 <article class="h-screen scroller">
-	<section class="min-h-screen flex flex-col text-3xl md:text-5xl pt-72 md:pt-20">
+	<section class="min-h-screen flex flex-col text-3xl md:text-5xl pt-40 md:pt-20">
 		<div class="flex justify-center">
 			<div>Riley is</div>
 		</div>
